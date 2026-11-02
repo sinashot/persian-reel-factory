@@ -1,0 +1,4 @@
+numpy
+imageio-ffmpeg
+librosa
+faster-whisper

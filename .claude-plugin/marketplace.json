@@ -1,0 +1,12 @@
+{
+  "name": "persian-reel-factory",
+  "owner": {"name": "sinashot"},
+  "plugins": [
+    {
+      "name": "persian-reel-factory",
+      "source": "./",
+      "description": "Persian (Farsi) Instagram Reels from code with a ready Remotion template — half the tokens, twice the speed.",
+      "version": "1.0.0"
+    }
+  ]
+}

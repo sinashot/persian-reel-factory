@@ -1,0 +1,21 @@
+{
+  "name": "persian-reel-factory",
+  "description": "Persian (Farsi) Instagram Reels from code: ready Remotion template, ElevenLabs voice, Whisper word-by-word captions, music and SFX, safe zones. Half the tokens, twice the speed.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Sina Sadr Ai"
+  },
+  "license": "MIT",
+  "keywords": [
+    "remotion",
+    "instagram",
+    "reels",
+    "persian",
+    "farsi",
+    "video",
+    "elevenlabs",
+    "whisper"
+  ],
+  "homepage": "https://github.com/sinashot/persian-reel-factory",
+  "repository": "https://github.com/sinashot/persian-reel-factory"
+}
