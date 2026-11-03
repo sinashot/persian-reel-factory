@@ -31,7 +31,9 @@ Claude دیگر هر بار از صفر کد نمی‌نویسد. پس‌زمی�
 - 🔥 راهنمای وایرال: موضوع، هوک، دعوت به اقدام و کپشن
 
 ## نصب (۲ دقیقه)
-داخل Claude Code بنویسید:
+دو راه دارد؛ هرکدام برایتان راحت‌تر بود:
+
+**روش ۱ — پلاگین Claude Code (همه‌ی پلن‌ها):** داخل Claude Code بنویسید:
 
 </div>
 
@@ -41,6 +43,10 @@ Claude دیگر هر بار از صفر کد نمی‌نویسد. پس‌زمی�
 ```
 
 <div dir="rtl">
+
+**روش ۲ — آپلود مستقیم در claude.ai (مناسب پلن رایگان):** دکمه‌ی سبز «Code → Download ZIP» بالای این صفحه را دانلود نکنید — آن کل مخزن را می‌دهد و claude.ai ردش می‌کند. به‌جایش:
+1. همین فایل آماده را دانلود کنید: **[persian-reel-factory-skill.zip](https://github.com/sinashot/persian-reel-factory/raw/main/dist/persian-reel-factory-skill.zip)**
+2. در claude.ai: Settings → Capabilities → Skills → **Upload a skill** → همان فایل را انتخاب کنید.
 
 یا دستی: پوشه‌ی `skills/persian-reel-factory` را در `~/.claude/skills/` کپی کنید.
 
@@ -60,12 +66,14 @@ Claude دیگر هر بار از صفر کد نمی‌نویسد. پس‌زمی�
 - **Pipeline:** `lines.json` → TTS (ElevenLabs `eleven_v3`, Persian) → beat-grid alignment → faster-whisper word times → `cues.json` → synthesized score + SFX ducked under the voice (-14 LUFS) → Remotion render → remux.
 - **Instagram-safe:** every word stays inside x 80..920, y 230..1440; a `Guides` composition shows the UI bands.
 
-Install:
+Install, two ways:
 
-```
-/plugin marketplace add sinashot/persian-reel-factory
-/plugin install persian-reel-factory@persian-reel-factory
-```
+- **Claude Code plugin (any plan):**
+  ```
+  /plugin marketplace add sinashot/persian-reel-factory
+  /plugin install persian-reel-factory@persian-reel-factory
+  ```
+- **Direct skill upload on claude.ai (works on the free plan too):** don't use the green "Code → Download ZIP" button above — that zip bundles the whole repo (plugin manifest included) and claude.ai's skill uploader rejects it. Instead download **[persian-reel-factory-skill.zip](https://github.com/sinashot/persian-reel-factory/raw/main/dist/persian-reel-factory-skill.zip)** (just the skill, no plugin manifest) and upload it under Settings → Capabilities → Skills → **Upload a skill**.
 
 Or copy `skills/persian-reel-factory` into `~/.claude/skills/`. Then ask Claude: *"make a reel about …"*.
 
